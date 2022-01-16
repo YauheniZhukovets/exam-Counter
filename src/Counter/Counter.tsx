@@ -1,31 +1,43 @@
 import React from 'react';
-import {Button} from './Button';
+import s from './Counter.module.css'
+import {Button} from '../Button/Button';
 
-type counterProps = {
-    startValue: number
+
+type CounterPropsType = {
     maxValue: number
-    count: number
-    addCount: () => void
+    inc: number
+    incCount: () => void
     resetCount: () => void
+    disabledInc: boolean
+    disabledRes: boolean
+    isShowStartTestMessage: boolean
+    errorText: string
+    startValue: number
 }
 
-export const Counter = (props: counterProps) => {
-
+const getStyle = (props: CounterPropsType) => {
+    if (props.errorText === 'Incorrect value!' || props.inc === props.maxValue || props.startValue < 0 || props.maxValue < props.startValue) {
+        return s.errorTextDisplay
+    } else  {
+       return s.textDisplay
+    }
+}
+export const Counter = (props: CounterPropsType) => {
     return (
-        <div className={'counter'}>
-            <div className={'display'}><span
-                className={props.count === props.maxValue ? 'errorMessage' : ''}>{props.count}</span></div>
-            <div className={'buttonCount'}>
+        <div className={s.counter}>
+            <div className={getStyle(props)}>
+                {props.isShowStartTestMessage && props.errorText ? props.errorText : props.inc}
+            </div>
+
+            <div className={'button'}>
 
                 <Button title={'inc'}
-                        Value={props.maxValue}
-                        count={props.count}
-                        funcButton={props.addCount}
+                        funcButton={props.incCount}
+                        disabled={props.disabledInc}
                 />
                 <Button title={'reset'}
-                        Value={props.startValue}
-                        count={props.count}
                         funcButton={props.resetCount}
+                        disabled={props.disabledRes}
                 />
             </div>
         </div>

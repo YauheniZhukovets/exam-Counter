@@ -1,0 +1,29 @@
+.counter {
+    display: inline-block;
+    width: 450px;
+    text-align: center;
+    background-color: #0a378a;
+    padding: 70px;
+    border-radius: 20px;
+}
+
+.errorTextDisplay {
+
+    height: 50px;
+    color: #f10707;
+    font-weight: 1000;
+    font-size: 30px;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.textDisplay {
+
+    height: 50px;
+    font-size: 30px;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    padding: 40px;
+}
+

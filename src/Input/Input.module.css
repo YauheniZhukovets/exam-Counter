@@ -1,37 +1,20 @@
-import React, {ChangeEvent, KeyboardEvent} from 'react';
-
-type InputPropsType = {
-    changeValue: (value: number) => void
-    pressSet: () => void
-    titleInput: string
-    errorInput: string
-    value: number
+.input {
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    background-color: #a4bcec;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 20px;
 }
 
-const Input = (props:InputPropsType) => {
-
-    const onChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
-        props.changeValue(+e.currentTarget.value)
-    }
-
-    const onKeyPressKeyHandler = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter') {
-            props.pressSet()
-        }
-    }
-
-    return (
-        <div>
-            <span>{props.titleInput}</span>
-            <input
-                onKeyPress={onKeyPressKeyHandler}
-                className={props.errorInput}
-                type={'number'}
-                onChange={onChangeInput}
-                value={props.value}
-            />
-        </div>
-    );
-};
-
-export default Input;
+.errorInput {
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    background-color: #963434;
+    border-color: #f10707;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 20px;
+}
