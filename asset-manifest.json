@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/exam-Counter/static/css/main.94633f80.chunk.css",
-    "main.js": "/exam-Counter/static/js/main.573b8d57.chunk.js",
-    "main.js.map": "/exam-Counter/static/js/main.573b8d57.chunk.js.map",
-    "runtime-main.js": "/exam-Counter/static/js/runtime-main.64e247a2.js",
-    "runtime-main.js.map": "/exam-Counter/static/js/runtime-main.64e247a2.js.map",
-    "static/js/2.b6f5e862.chunk.js": "/exam-Counter/static/js/2.b6f5e862.chunk.js",
-    "static/js/2.b6f5e862.chunk.js.map": "/exam-Counter/static/js/2.b6f5e862.chunk.js.map",
-    "static/js/3.4904909b.chunk.js": "/exam-Counter/static/js/3.4904909b.chunk.js",
-    "static/js/3.4904909b.chunk.js.map": "/exam-Counter/static/js/3.4904909b.chunk.js.map",
+    "main.css": "/exam-Counter/static/css/main.4f5d8c86.css",
+    "main.js": "/exam-Counter/static/js/main.aeb347af.js",
+    "static/js/453.0f12a563.chunk.js": "/exam-Counter/static/js/453.0f12a563.chunk.js",
     "index.html": "/exam-Counter/index.html",
-    "static/css/main.94633f80.chunk.css.map": "/exam-Counter/static/css/main.94633f80.chunk.css.map",
-    "static/js/2.b6f5e862.chunk.js.LICENSE.txt": "/exam-Counter/static/js/2.b6f5e862.chunk.js.LICENSE.txt"
+    "main.4f5d8c86.css.map": "/exam-Counter/static/css/main.4f5d8c86.css.map",
+    "main.aeb347af.js.map": "/exam-Counter/static/js/main.aeb347af.js.map",
+    "453.0f12a563.chunk.js.map": "/exam-Counter/static/js/453.0f12a563.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.64e247a2.js",
-    "static/js/2.b6f5e862.chunk.js",
-    "static/css/main.94633f80.chunk.css",
-    "static/js/main.573b8d57.chunk.js"
+    "static/css/main.4f5d8c86.css",
+    "static/js/main.aeb347af.js"
   ]
 }
