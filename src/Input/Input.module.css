@@ -1,6 +1,6 @@
 .input {
     text-align: center;
-    width: 150px;
+    width: 100px;
     font-size: 20px;
     background-color: #a4bcec;
     border-radius: 20px;
@@ -10,7 +10,7 @@
 
 .errorInput {
     text-align: center;
-    width: 150px;
+    width: 100px;
     font-size: 20px;
     background-color: #963434;
     border-color: #f10707;

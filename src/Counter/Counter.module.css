@@ -1,10 +1,10 @@
 .counter {
     display: inline-block;
-    width: 450px;
     text-align: center;
     background-color: #0a378a;
-    padding: 70px;
+    padding: 30px;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .errorTextDisplay {

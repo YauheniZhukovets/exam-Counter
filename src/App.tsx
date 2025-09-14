@@ -97,16 +97,6 @@ function App() {
 
     return (
         <div className={'App'}>
-            <SettingCounter
-                startValue={startValue}
-                maxValue={maxValue}
-                errorMaxInput={errorMaxInput}
-                errorStartInput={errorStartInput}
-                changeStartValue={changeStartValue}
-                changeMaxValue={changeMaxValue}
-                pressSet={pressSet}
-                disabledSet={disabledSet}
-            />
             <Counter
                 startValue={startValue}
                 errorText={errorText}
@@ -118,7 +108,16 @@ function App() {
                 disabledInc={disabledInc}
                 disabledRes={disabledRes}
             />
-
+            <SettingCounter
+                startValue={startValue}
+                maxValue={maxValue}
+                errorMaxInput={errorMaxInput}
+                errorStartInput={errorStartInput}
+                changeStartValue={changeStartValue}
+                changeMaxValue={changeMaxValue}
+                pressSet={pressSet}
+                disabledSet={disabledSet}
+            />
         </div>
     );
 }

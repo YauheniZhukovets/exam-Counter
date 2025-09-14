@@ -28,14 +28,14 @@ export const SettingCounter = (props: SettingCounterPropsType) => {
             <div className={s.settingDisplay}>
                 <Input changeValue={props.changeMaxValue}
                        pressSet={props.pressSet}
-                       titleInput={'max value:'}
+                       titleInput={'max:'}
                        errorInput={props.errorMaxInput}
                        value={props.maxValue}
                 />
 
                 <Input changeValue={props.changeStartValue}
                        pressSet={props.pressSet}
-                       titleInput={'start value:'}
+                       titleInput={'start:'}
                        errorInput={props.errorStartInput}
                        value={props.startValue}
                 />

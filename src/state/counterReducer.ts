@@ -3,7 +3,7 @@ let initialState = {
     maxValue: 5,
     inc: 0,
     disableSet: false,
-    errorText: 'Enter value and press "set"'
+    errorText: 'Enter value'
 }
 type InitialStateType = typeof initialState
 
@@ -11,16 +11,16 @@ export const countReducer = (state: InitialStateType = initialState, action: Act
     switch (action.type) {
         case 'CHANGE-START-VALUE':
             if (action.value < 0 || action.value >= state.maxValue) {
-                return {...state, startValue: action.value, disableSet: false, errorText: 'Incorrect value!'}
+                return {...state, startValue: action.value, disableSet: false, errorText: 'Incorrect!'}
             } else {
-                return {...state, startValue: action.value, disableSet: false, errorText: 'Enter value and press "set"'}
+                return {...state, startValue: action.value, disableSet: false, errorText: 'Enter value'}
             }
 
         case 'CHANGE-MAX-VALUE': {
             if (action.value <= 0 || action.value <= state.startValue) {
-                return {...state, maxValue: action.value, disableSet: false, errorText: 'Incorrect value!'}
+                return {...state, maxValue: action.value, disableSet: false, errorText: 'Incorrect!'}
             } else {
-                return {...state, maxValue: action.value, disableSet: false, errorText: 'Enter value and press "set"'}
+                return {...state, maxValue: action.value, disableSet: false, errorText: 'Enter value'}
             }
         }
         case 'PRESS-SET': {

@@ -1,8 +1,7 @@
 .settingCounter {
-    width: 450px;
     text-align: center;
     background-color: #0a378a;
-    padding: 70px;
+    padding: 30px;
     border-radius: 20px;
 }
 
@@ -12,7 +11,7 @@
     font-size: 30px;
     background-color: cornflowerblue;
     border-radius: 20px;
-    padding: 40px;
+    padding: 30px;
 }
 
 
